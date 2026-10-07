@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.quiz-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.quiz-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.quiz-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    color: #555;
+    font-size: 14px;
+}
+
+#question {
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.answer-btn {
+    width: 100%;
+    padding: 14px;
+
+    border: 2px solid #ddd;
+    border-radius: 8px;
+
+    background-color: white;
+    color: #333;
+
+    font-size: 16px;
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.answer-btn:hover {
+    background-color: #f0f7ff;
+    border-color: #3498db;
+}
+
+#next-btn {
+    width: 100%;
+
+    margin-top: 25px;
+    padding: 14px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #3498db;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#next-btn:hover {
+    background-color: #2980b9;
+}
+
+.result-box {
+    display: none;
+
+    background-color: white;
+    padding: 30px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.result-box h2 {
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.result-box p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#final-score {
+    font-size: 32px;
+    color: #3498db;
+    margin-bottom: 25px;
+}
+
+#restart-btn {
+    padding: 14px 30px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #27ae60;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#restart-btn:hover {
+    background-color: #219150;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .quiz-box {
+        padding: 20px;
+    }
+
+    #question {
+        font-size: 19px;
+    }
+
+    .answer-btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+}

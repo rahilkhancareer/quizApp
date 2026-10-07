@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="quiz-container">
+
+        <h1>Quiz App</h1>
+
+        <div class="quiz-box">
+
+            <div class="quiz-header">
+                <span id="question-number">Question 1 of 4</span>
+                <span id="score">Score: 0</span>
+            </div>
+
+            <h2 id="question">
+                What does HTML stand for?
+            </h2>
+
+            <div class="answers">
+
+                <button class="answer-btn">
+                    Hyper Text Markup Language
+                </button>
+
+                <button class="answer-btn">
+                    High Text Machine Language
+                </button>
+
+                <button class="answer-btn">
+                    Hyperlink Text Management Language
+                </button>
+
+                <button class="answer-btn">
+                    Home Tool Markup Language
+                </button>
+
+            </div>
+
+            <button id="next-btn">
+                Next
+            </button>
+
+        </div>
+
+        <div class="result-box">
+
+            <h2>Quiz Completed!</h2>
+
+            <p>Your Final Score:</p>
+
+            <h3 id="final-score">0 / 4</h3>
+
+            <button id="restart-btn">
+                Restart Quiz
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
